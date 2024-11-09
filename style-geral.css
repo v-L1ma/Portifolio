@@ -1,0 +1,41 @@
+/*pagina de estilos gerais*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: #2a3157;
+}
+
+nav{
+    background-color: #25283b;
+}
+
+
+section h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #F24B59;
+}
+
+h1 span{
+    color: white;
+}
+
+section p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #E9EBF2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+li{
+    list-style: none;
+}
