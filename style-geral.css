@@ -1,6 +1,6 @@
 /*pagina de estilos gerais*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wdth,wght@0,75,200..900;1,75,200..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,28 +8,28 @@
 
 main{
     background-color: #161A1D;
+    background: -webkit-linear-gradient(90deg,#3d4052,#282a36,#09090c); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg,#3d4052,#282a36,#09090c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 nav{
-    background-color: #000000;
+    background-color: #161A1D;
 
 }
 
-
-section h1{
-    font-family: "Montserrat", sans-serif;
-    font-stretch: expanded;
-    font-weight: 500;
+#home h1{
+    font-family: "Mona Sans", sans-serif;
+    font-weight: 300;
     color: #A4161A;
 }
 
+
 h1 span{
-    color: white;
+    color: #F5F3F4;
 }
 
 section p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #F5F3F4;
 }
 
 a{
@@ -45,4 +45,18 @@ a:hover{
 
 li{
     list-style: none;
+}
+
+
+.card h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #660708;
+}
+
+.card p{
+    color: white;
+    font-family: verdana;
+    font-weight: regular;
+    text-align: justify;
 }
