@@ -13,12 +13,11 @@ main{
 
 nav{
     background-color: #161A1D;
-
+    background: -webkit-linear-gradient(90deg,#3d4052,#282a36,#09090c); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg,#3d4052,#282a36,#09090c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #home h1{
-    font-family: "Mona Sans", sans-serif;
-    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #A4161A;
 }
 
@@ -59,4 +58,9 @@ li{
     font-family: verdana;
     font-weight: regular;
     text-align: justify;
+}
+
+.social-medias p{    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
 }
