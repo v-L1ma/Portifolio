@@ -1,6 +1,10 @@
 nav{
-    height: 40px;
+    height: 55px;
     align-content: center;
+}
+
+nav a{
+    font-size: 1.4em;
 }
 
 ul{
@@ -44,4 +48,39 @@ section button{
 .social-medias{
     height: 30px;
     margin-right: 50px;
+}
+
+section #teste{
+    height: 500px;
+    margin: auto;
+}
+
+#habilidades{
+    display: flex;
+    justify-content: space-around;
+
+    padding: 50px;
+}
+
+.card{
+    display: flex;    
+    flex-direction: column;
+    border: 3px solid rgba(255, 255, 255, 0.527);
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    padding-top: 20px;
+    border-radius: 8px;
+}
+
+.card p{
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10px;
+}
+.card img{
+    padding: 0;
+    height: 150px;
+    width: 150px;
+    margin: auto;
 }

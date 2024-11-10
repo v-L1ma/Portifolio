@@ -1,4 +1,5 @@
 /*pagina de estilos gerais*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -10,12 +11,14 @@ main{
 }
 
 nav{
-    background-color: #0B090A;
+    background-color: #000000;
+
 }
 
 
 section h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-stretch: expanded;
     font-weight: 500;
     color: #A4161A;
 }
@@ -34,6 +37,10 @@ a{
     color: #E9EBF2;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
+}
+
+a:hover{
+    color: #A4161A;
 }
 
 li{
