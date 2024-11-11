@@ -125,3 +125,8 @@ section button{
     height: 100px;
     margin-bottom: 20px;
 }
+
+.social-medias:hover{
+    background-color: red;
+    font-size: 1.5em;
+}

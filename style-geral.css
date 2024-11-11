@@ -60,6 +60,10 @@ li{
     text-align: justify;
 }
 
+.social-medias{    
+    box-shadow: 3px 3px 34px rgba(0, 0, 0, 0.267);
+}
+
 .social-medias p{    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
