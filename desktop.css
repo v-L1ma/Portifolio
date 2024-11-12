@@ -50,7 +50,7 @@ section{
     padding-bottom: 30px;
 }
 
-section button{
+#home button{
     border: 2px solid red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -142,8 +142,44 @@ section button{
 }
 
 /*PROJETOS*/
-#projetos img{
-    height: 400px;
+.card-projeto{
+    width: 350px;
+    height: 350px;
+    text-align: center;
+
+}
+
+.card-projeto img{
+    width: 350px;
+
+}
+
+.card-projeto h2{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    margin-bottom: 20px;
+}
+
+.card-projeto button{    
+    border: 2px solid red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to right, #A4161A, #660708);
+    margin-bottom: 20px;
+}
+
+.card-projeto #code{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: -15px;
 }
 
 
