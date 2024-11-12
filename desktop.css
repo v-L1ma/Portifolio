@@ -3,6 +3,10 @@ nav{
     align-content: center;
 }
 
+#mobile-menu{
+    display: none;
+}
+
 nav a{
     font-size: 1.4em;
 }

@@ -1,0 +1,214 @@
+#menu-desktop{
+    display: none;
+}
+#mobile-menu{
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+#mobile-menu img{
+    height: 40px;
+    align-items: end;
+}
+
+section{
+    height: 100vh;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom:5px solid #F24B59;
+}
+
+#home{
+    display: flex;
+}
+
+#home h1{
+    font-size: 4em;
+    padding-top: 350px;
+    padding-bottom: 20px;
+
+}
+
+#home p{
+    font-weight: bolder;
+    font-size: 1.5em;
+    padding-bottom: 30px;
+}
+
+#home button{
+    border: 2px solid red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to right, #A4161A, #660708);
+    margin-bottom: 50px;
+}
+
+#home img{
+    margin-left: -270px;
+    margin-top: 100px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 54px red;
+    outline: 5px solid rgba(0, 0, 0, 0.26);
+}
+
+.titulos{
+        color: red;
+        text-align: center;    
+        font-size: 2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 50px;
+
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobre p{
+    width: 80vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+#sobre strong{
+    color: red;
+}
+
+/*habilidades*/
+
+#gallery{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    padding: 20px;
+    box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.548);
+    border: 2px solid rgba(255, 255, 255, 0.199);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card img{
+    height: 120px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card h1{
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.card p{
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#gallery:hover > :not(:hover){
+    transition: .5s;    
+    scale: 0.9;
+}
+
+/*PROJETOS*/
+.card-projeto{
+    width: 350px;
+    height: 350px;
+    text-align: center;
+
+}
+
+.card-projeto img{
+    width: 350px;
+
+}
+
+.card-projeto h2{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    margin-bottom: 20px;
+}
+
+.card-projeto #botao{    
+    border: 2px solid red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to right, #A4161A, #660708);
+    margin-bottom: 20px;
+}
+
+.card-projeto #code{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: -15px;
+}
+
+
+/*contato*/
+
+#contato{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    gap: 10px;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+}
+.social-medias{
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.055);
+    padding: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.social-medias img{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.social-medias:hover{
+    background-color: red;
+}
+
+#contato:hover > :not(:hover){
+    opacity: 0.4;
+    transition: 1s;
+    transform: scale(0.9);
+}
