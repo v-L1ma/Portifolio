@@ -140,7 +140,8 @@ section{
     width: 350px;
     height: 350px;
     text-align: center;
-
+    margin-top: 100px;
+    margin-left: -20px;
 }
 
 .card-projeto img{
