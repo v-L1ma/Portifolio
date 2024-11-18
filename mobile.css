@@ -1,15 +1,41 @@
 #menu-desktop{
     display: none;
 }
+
 #mobile-menu{
-    padding: 10px;
-    display: flex;
+    padding-top: 10px;
+    display: block;
+}
+
+nav a{
+    font-size: 1.3em;
+}
+
+#menu-list{
+    display: block;
+}
+
+#mobile-menu ul{
+    display: block;
     justify-content: end;
 }
 
+#mobile-menu li{
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+#mobile-menu li:hover{
+    background-color: rgba(255, 255, 255, 0.034);
+}
+
+
 #mobile-menu img{
     height: 40px;
-    align-items: end;
+    margin-left: 360px;
+    margin-bottom: 5px;
 }
 
 section{

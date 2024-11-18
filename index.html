@@ -19,7 +19,13 @@
         </ul>
     </nav>
     <nav id="mobile-menu">
-        <img src="Imagens/menu-aberto.png" alt="">
+        <img src="Imagens/menu-aberto.png" alt="" onclick="abrirMenu()">
+        <ul id="menu-list">
+            <a href="#sobre"><li>Sobre</li></a>
+            <a href="#habilidades"><li>Habilidades</li></a>
+            <a href="#projetos"><li>Projetos</li></a>
+            <a href="#contato"><li>Contato</li></a>
+        </ul>
     </nav>
     <main>
         <section id="home">
@@ -110,5 +116,17 @@
 
         </section>
     </main>
+
+    <script>
+        function abrirMenu(){
+
+            var menu = document.getElementById('menu-list')
+            if(menu.style.display == block){
+                menu.style.display = 'none'
+            } else{
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
