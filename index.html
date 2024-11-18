@@ -117,11 +117,12 @@
         </section>
     </main>
 
-    <script>
+    <script>        
         function abrirMenu(){
+            
+            var menu = document.querySelector('#menu-list')
 
-            var menu = document.getElementById('menu-list')
-            if(menu.style.display == block){
+            if(menu.style.display == 'block'){
                 menu.style.display = 'none'
             } else{
                 menu.style.display = 'block'
