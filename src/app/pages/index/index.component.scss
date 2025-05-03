@@ -214,15 +214,28 @@ main {
           margin-top: .5em;
           display: flex;
           align-items: center;
+          justify-content: space-between;
 
           p {
             width: 15em;
             color: variables.$Purple;
           }
 
+          .links{
+            display: flex;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            width: 12em;
+
+            a{
+              text-decoration: none;
+            }
+          }
+
           div {
             display: flex;
-            gap: 0;
+            gap: .5em;
 
             img {
               height: 1.5em;
