@@ -214,8 +214,8 @@ main {
           margin-top: .5em;
           display: flex;
           align-items: center;
-          justify-content: space-between;
-
+          flex-wrap: wrap;
+          gap: 2em;
           p {
             width: 15em;
             color: variables.$Purple;
@@ -225,8 +225,7 @@ main {
             display: flex;
             padding: 0;
             align-items: center;
-            justify-content: center;
-            width: 12em;
+            gap: 0;
 
             a{
               text-decoration: none;
@@ -310,9 +309,30 @@ main {
       div {
         grid-template-columns: repeat(2, auto);
 
-        .card img {
+        .card {
+          
+          img {
           height: 20em;
         }
+
+        > div{
+          flex-wrap: nowrap;
+
+          .links{
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+
+          }
+
+        }
+
+        
+
+          
+        
+
+      }
       }
     }
   }
