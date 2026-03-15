@@ -1,0 +1,72 @@
+@use '../../../styles/variables' as vars;
+
+.about {
+  padding: 6rem 1rem;
+  background-color: vars.$brand-dark;
+
+  &-container {
+    max-width: 56rem;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: vars.$white;
+
+    .highlight {
+      color: vars.$brand-purple;
+    }
+  }
+
+  &-card {
+    background-color: vars.$brand-card;
+    border: 1px solid vars.$gray-800;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+
+    @media (min-width: 768px) {
+      padding: 3rem;
+    }
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    line-height: 1.625;
+    color: vars.$gray-400;
+
+    span.bold {
+      color: vars.$white;
+      font-weight: 500;
+    }
+
+    span.tech-frontend {
+      color: vars.$brand-indigo;
+    }
+
+    span.tech-backend {
+      color: vars.$brand-purple;
+    }
+  }
+
+  &-footer {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid vars.$gray-800;
+
+    p {
+      color: vars.$white;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 0.875rem;
+      color: vars.$gray-500;
+    }
+  }
+}

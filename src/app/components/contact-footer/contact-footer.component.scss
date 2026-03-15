@@ -1,0 +1,66 @@
+@use '../../../styles/variables' as vars;
+
+.footer {
+  padding: 6rem 1rem;
+  border-top: 1px solid vars.$gray-800;
+  background-color: vars.$brand-dark;
+  text-align: center;
+
+  &-container {
+    max-width: 56rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: vars.$white;
+    line-height: 1.25;
+
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+
+    .highlight-indigo { color: vars.$brand-indigo; }
+    .highlight-purple { color: vars.$brand-purple; }
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+
+    a {
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: vars.$brand-card;
+      border: 1px solid vars.$gray-800;
+      transition: all 0.3s;
+
+      &:hover {
+        border-color: vars.$brand-purple;
+      }
+
+      &.whatsapp:hover { border-color: vars.$brand-indigo; }
+
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+
+  .copyright {
+    color: vars.$gray-600;
+    font-size: 0.875rem;
+    margin-top: 3rem;
+  }
+}

@@ -1,0 +1,31 @@
+<div class="project-card" [class.full-width]="isFullWidth">
+  <div class="project-image">
+    <img [src]="image" [alt]="title">
+  </div>
+  
+  <div class="project-info">
+    <div class="header">
+      <h3 [class.text-3xl]="isFullWidth">{{ title }}</h3>
+      <div class="tech-icons">
+        <img *ngFor="let icon of techIcons" [src]="icon" [alt]="title">
+      </div>
+    </div>
+
+    <p [class.text-base]="isFullWidth">{{ description }}</p>
+
+    <div class="tech-tags">
+      <span *ngFor="let tech of techs">{{ tech }}</span>
+    </div>
+
+    <div class="links">
+      <a [href]="githubUrl" target="_blank" class="github">
+        Github
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="7" y1="17" x2="17" y2="7"></line>
+          <polyline points="7 7 17 7 17 17"></polyline>
+        </svg>
+      </a>
+      <a [href]="liveUrl" target="_blank" class="live">Veja o site ao vivo</a>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
-*, html{
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+@use './styles/variables' as vars;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: vars.$brand-dark;
+  color: vars.$gray-300;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, vars.$brand-purple, vars.$brand-indigo);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-blur {
+  backdrop-filter: blur(8px);
+  background-color: rgba(12, 17, 26, 0.8);
+}
+
+section {
+  position: relative;
 }

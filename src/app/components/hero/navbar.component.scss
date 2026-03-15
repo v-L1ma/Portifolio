@@ -1,0 +1,68 @@
+@use 'variables.scss' as vars;
+
+.hero {
+  background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.1) 0%, vars.$brand-dark 70%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1rem 0;
+  text-align: center;
+
+  &-content {
+    max-width: 56rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: vars.$white;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+
+    @media (min-width: 768px) {
+      font-size: 4.5rem;
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right, vars.$brand-purple, vars.$brand-indigo);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: vars.$gray-400;
+    max-width: 42rem;
+    margin: 0 auto;
+    line-height: 1.625;
+
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &-cta {
+    padding-top: 1.5rem;
+    
+    a {
+      background-color: vars.$brand-card;
+      border: 1px solid vars.$gray-800;
+      color: vars.$white;
+      padding: 1rem 2rem;
+      border-radius: 0.75rem;
+      font-weight: 600;
+      transition: all 0.3s;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+      &:hover {
+        border-color: vars.$brand-purple;
+      }
+    }
+  }
+}

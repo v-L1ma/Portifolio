@@ -1,0 +1,38 @@
+<section class="projects" id="projects">
+  <div class="projects-container">
+    <h2>Alguns do meus <span class="highlight">projetos recentes</span></h2>
+    
+    <div class="projects-grid">
+      <app-project-card
+        title="Neobank"
+        description="Sistema bancário online completo, desenvolvido para oferecer praticidade e segurança aos usuários. A plataforma permite a realização de transações financeiras, como transferências entre contas, saques e depósitos, de forma rápida e intuitiva."
+        image="neobank.jpg"
+        githubUrl="https://github.com/v-L1ma"
+        liveUrl="#"
+        [techs]="['Angular', 'Spring Boot', 'MySQL']"
+        [techIcons]="['angularIcon.svg', 'springicons.svg', 'sqlicons.svg']"
+      ></app-project-card>
+
+      <app-project-card
+        title="Facilita RH"
+        description="O facilita RH, é um sistema voltado para solucionar problemas no processo de recrutamento e seleção, integrando um portal de vagas para quem busca uma oportunidade com um painel para os recrutadores."
+        image="facilitarh.jpg"
+        githubUrl="https://github.com/v-L1ma/RH"
+        liveUrl="https://facilita-rh.netlify.app"
+        [techs]="['React', 'Node.js', 'PostgreSQL']"
+        [techIcons]="['Reacticon.svg', 'nodeicons.svg', 'sqlicons.svg']"
+      ></app-project-card>
+
+      <app-project-card
+        title="AdotaAi.Pet"
+        description="O Adota aí é um site criado com a finalidade de facilitar o processo de adoção e de doação de animais, um site onde existem funcionalidades tanto para o adotante quanto para o doador."
+        image="adotaaipet.png"
+        githubUrl="https://github.com/v-L1ma/AdotaAi.pet"
+        liveUrl="https://adotaai-pet.netlify.app"
+        [techs]="['React', 'Firebase', 'Tailwind']"
+        [techIcons]="['Reacticon.svg', 'tailwindicons.svg']"
+        [isFullWidth]="true"
+      ></app-project-card>
+    </div>
+  </div>
+</section>

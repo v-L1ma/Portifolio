@@ -1,0 +1,138 @@
+@use '../../../styles/variables' as vars;
+
+.tech-stack {
+  padding: 6rem 1rem;
+  background-color: vars.$brand-dark;
+  overflow: hidden;
+  text-align: center;
+
+  .subtitle {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: vars.$gray-500;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    color: vars.$white;
+
+    .highlight {
+      color: vars.$brand-purple;
+    }
+  }
+
+  .orbit-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 640px) {
+      height: 400px;
+    }
+  }
+
+  .center-sun {
+    z-index: 10;
+    background-color: rgba(99, 102, 241, 0.2);
+    border-radius: 9999px;
+    border-radius: 9999px;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    backdrop-filter: blur(4px);
+
+    .logo {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .orbit {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+
+    &-1 { width: 240px; height: 240px; animation: rotate 20s linear infinite; }
+    &-2 { width: 400px; height: 400px; animation: rotate 35s linear infinite reverse; }
+    &-3 { width: 560px; height: 560px; animation: rotate 50s linear infinite; }
+
+    @media (max-width: 640px) {
+      &-1 { width: 150px; height: 150px; }
+      &-2 { width: 260px; height: 260px; }
+      &-3 { width: 370px; height: 370px; }
+    }
+  }
+
+  .planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    .tech-card {
+      padding: 0.75rem;
+      background-color: vars.$brand-card;
+      border: 1px solid vars.$gray-800;
+      border-radius: 0.5rem;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: translateY(-5px);
+        border-color: vars.$brand-indigo;
+      }
+
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        animation: inherit; // To override if needed, but we use counter-rotate
+      }
+    }
+  }
+
+  // Counter-rotate icons to keep them upright
+  .orbit-1 .planet .tech-card { animation: counter-rotate 20s linear infinite; }
+  .orbit-2 .planet .tech-card { animation: counter-rotate 35s linear infinite reverse; }
+  .orbit-3 .planet .tech-card { animation: counter-rotate 50s linear infinite; }
+
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes counter-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+  }
+
+  // Positions on orbits
+  .pos-0 { top: 0; left: 50%; }
+  .pos-90 { top: 50%; left: 100%; }
+  .pos-180 { top: 100%; left: 50%; }
+  .pos-270 { top: 50%; left: 0%; }
+  
+  .pos-45 { top: 14.6%; left: 85.4%; }
+  .pos-135 { top: 85.4%; left: 85.4%; }
+  .pos-225 { top: 85.4%; left: 14.6%; }
+  .pos-315 { top: 14.6%; left: 14.6%; }
+}
