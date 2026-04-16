@@ -11,7 +11,7 @@ import { ProjectCardComponent } from '../project-card/project-card.component';
 export class ProjectsComponent {
   projects = [
     {
-      title:"JobAgent",
+      title:"BuscaVagas",
       description:"Plataforma centralizadora de vagas, buscamos vagas de outras plataformas de acordo com as preferencias estabelecidas pelo usuario, para cada vaga o usuário pode gerar com base em seu curriculo atual um novo curriculo melhorado e mais pertinente com avaga.",
       image:"jobAgent.jpg",
       githubUrl:"https://github.com/v-L1ma/jobAgentApi",
